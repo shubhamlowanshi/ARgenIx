@@ -12,7 +12,6 @@ const Dashboard = () => {
 
     const API = import.meta.env.VITE_API_URL;
 
-    // 👉 Sirf debug ke liye
     useEffect(() => {
         console.log("API URL =", API);
     }, [API]);
@@ -94,7 +93,6 @@ const Dashboard = () => {
                 </div>
             </div>
 
-            {/* ACTION BAR */}
             <div className="flex gap-4 mb-6">
                 <input
                     placeholder="Search sensor..."
@@ -111,7 +109,7 @@ const Dashboard = () => {
                 </button>
             </div>
 
-            {/* LATEST PANEL */}
+          
             <div className="mb-6 backdrop-blur bg-white/5 p-4 rounded-xl border border-white/10 shadow-xl">
                 <h3 className="font-bold mb-3 flex items-center gap-2">
                     🟢 Latest From DB
@@ -135,7 +133,7 @@ const Dashboard = () => {
                 </div>
             </div>
 
-            {/* TABLE */}
+        
             <div className="border border-white/10 rounded-xl overflow-hidden shadow-2xl backdrop-blur bg-white/5">
                 <div className="grid grid-cols-4 bg-black/40 p-3 font-bold text-sm tracking-wide">
                     <div>Name</div>
